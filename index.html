@@ -1,0 +1,652 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>VALISH | Beauty Salon & Parlour — Nepal</title>
+  <meta name="description" content="VALISH Beauty Salon and Parlour is a calm, neighborhood hair and skin sanctuary in Nepal dedicated to precise craftsmanship, hygienic care, and natural beauty.">
+  <link rel="canonical" href="https://valishsalon.com.np">
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,600;1,9..40,400&family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,400;0,9..144,500;0,9..144,600;1,9..144,400&display=swap" rel="stylesheet">
+
+  <!-- Main Stylesheet -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- STICKY NAVBAR -->
+  <header class="site-header over-hero" id="siteHeader">
+    <div class="container">
+      <a href="#" class="logo-group" aria-label="VALISH Salon Home">
+        <span class="logo-title">VALISH</span>
+        <span class="logo-subtitle">Beauty Salon &amp; Parlour</span>
+      </a>
+
+      <nav class="desktop-nav" aria-label="Primary Navigation">
+        <a href="#services" class="nav-link">Services</a>
+        <a href="#gallery" class="nav-link">Gallery</a>
+        <a href="#faq" class="nav-link">FAQ</a>
+        <a href="#book" class="nav-link">Book</a>
+      </nav>
+
+      <div class="header-cta">
+        <a href="#book" class="btn btn-primary">Book Now</a>
+      </div>
+
+      <button class="hamburger" id="hamburgerBtn" aria-label="Open Navigation Menu" aria-expanded="false" aria-controls="mobileDrawer">
+        <span class="hamburger-line"></span>
+        <span class="hamburger-line"></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- FULLSCREEN MOBILE NAVIGATION DRAWER -->
+  <div class="mobile-drawer" id="mobileDrawer" aria-hidden="true">
+    <div class="mobile-nav-links">
+      <a href="#services" class="mobile-nav-link">Services</a>
+      <a href="#gallery" class="mobile-nav-link">Gallery</a>
+      <a href="#faq" class="mobile-nav-link">FAQ</a>
+      <a href="#book" class="mobile-nav-link">Book</a>
+    </div>
+    <div class="mobile-drawer-footer">
+      <div class="mobile-drawer-contact">
+        <p>Valish Beauty Salon and Parlour</p>
+        <p>Your city, Nepal</p>
+        <p>+977-98XXXXXXXX</p>
+      </div>
+      <a href="#book" class="btn btn-primary btn-block mobile-drawer-close-btn">Book an Appointment</a>
+    </div>
+  </div>
+
+  <main id="mainContent">
+
+    <!-- HERO: SCROLL-CONTROLLED CAMERA SEQUENCE -->
+    <section class="hero-scroll-wrapper" id="heroScroll" aria-label="Interactive Introduction">
+      <div class="hero-sticky-frame">
+        <!-- Thin background-load progress bar -->
+        <div class="hero-progress-bar" id="heroProgressBar" role="progressbar" aria-valuemin="0" aria-valuemax="100" aria-valuenow="0"></div>
+
+        <!-- Render Canvas -->
+        <canvas class="hero-canvas" id="heroCanvas" width="1920" height="1080" aria-label="Visual documentary view inside Valish Salon"></canvas>
+
+        <!-- Ambient readability gradient -->
+        <div class="hero-vignette" aria-hidden="true"></div>
+
+        <!-- Overlays mapped across scroll positions -->
+        <div class="hero-stage-container">
+
+          <!-- Stage 1 (0% - 15%) -->
+          <div class="hero-step hero-step-intro is-active" id="heroStep1">
+            <span class="eyebrow">Valish Beauty Salon and Parlour</span>
+            <h1 class="heading-hero">Hair, done with care.</h1>
+            <p>A quiet neighborhood sanctuary in Nepal where modern aesthetic precision meets patient, unhurried craft.</p>
+            <div class="hero-scroll-cue" aria-hidden="true">
+              <span class="hero-scroll-indicator"></span>
+              <span>Scroll to explore</span>
+            </div>
+          </div>
+
+          <!-- Stage 2 (25% - 45%) -->
+          <div class="hero-step hero-step-stylists" id="heroStep2">
+            <span class="eyebrow">Attentive Craft</span>
+            <h2 class="hero-step-title">Trained stylists</h2>
+            <p class="hero-step-desc">Stylists trained in texture, flow, and modern shapes that grow out naturally.</p>
+          </div>
+
+          <!-- Stage 3 (50% - 70%) -->
+          <div class="hero-step hero-step-tools" id="heroStep3">
+            <span class="eyebrow">Uncompromising Hygiene</span>
+            <h2 class="hero-step-title">Clean, hygienic tools</h2>
+            <p class="hero-step-desc">Every blade sanitized, every station reset after each client. Zero shortcuts.</p>
+          </div>
+
+          <!-- Stage 4 (75% - 100%) -->
+          <div class="hero-step hero-step-book" id="heroStep4">
+            <span class="eyebrow">Appointments &amp; Walk-ins</span>
+            <h2 class="hero-step-title">Book your visit</h2>
+            <p class="hero-step-desc">Reserve your styling or treatment chair ahead of time.</p>
+            <a href="#book" class="btn btn-white">Book an appointment</a>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- SERVICES SECTION -->
+    <section class="section" id="services">
+      <div class="container">
+        <div class="section-header reveal-fade-up">
+          <span class="eyebrow">Clear &amp; Transparent</span>
+          <h2 class="heading-section">Our Services</h2>
+          <p class="lead-text">Quiet luxury at straightforward neighborhood prices. Every session includes a consultation and custom finishing.</p>
+        </div>
+
+        <div class="services-container">
+
+          <!-- Hair Category -->
+          <div class="service-category reveal-fade-up">
+            <div class="category-label-col">
+              <span class="eyebrow">01</span>
+              <h3 class="category-title">Hair</h3>
+            </div>
+            <div class="services-list">
+              <div class="service-row">
+                <div class="service-info">
+                  <h4 class="service-name">Haircut</h4>
+                  <p class="service-desc">Consultation, precision wash, cut, and personalized shape finishing.</p>
+                </div>
+                <div class="service-price-wrap">
+                  <span class="service-currency">NPR</span>
+                  <span class="service-price" data-target="500">0</span>
+                </div>
+              </div>
+              <div class="service-row">
+                <div class="service-info">
+                  <h4 class="service-name">Hair coloring</h4>
+                  <p class="service-desc">Natural tones, root retouch, or dimensional global highlights with nourishing gloss.</p>
+                </div>
+                <div class="service-price-wrap">
+                  <span class="service-currency">NPR</span>
+                  <span class="service-price" data-target="2500">0</span>
+                </div>
+              </div>
+              <div class="service-row">
+                <div class="service-info">
+                  <h4 class="service-name">Hair spa</h4>
+                  <p class="service-desc">Deep scalp massage, restorative moisture mask, and warm steam infusion.</p>
+                </div>
+                <div class="service-price-wrap">
+                  <span class="service-currency">NPR</span>
+                  <span class="service-price" data-target="1500">0</span>
+                </div>
+              </div>
+              <div class="service-row">
+                <div class="service-info">
+                  <h4 class="service-name">Straightening</h4>
+                  <p class="service-desc">Long-lasting smooth rebonding or smoothening treatment with soft movement.</p>
+                </div>
+                <div class="service-price-wrap">
+                  <span class="service-currency">NPR</span>
+                  <span class="service-price" data-target="4000">0</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Skin Category -->
+          <div class="service-category reveal-fade-up">
+            <div class="category-label-col">
+              <span class="eyebrow">02</span>
+              <h3 class="category-title">Skin</h3>
+            </div>
+            <div class="services-list">
+              <div class="service-row">
+                <div class="service-info">
+                  <h4 class="service-name">Facial</h4>
+                  <p class="service-desc">Custom skin exfoliation, lymphatic massage, and hydrating herbal sheet care.</p>
+                </div>
+                <div class="service-price-wrap">
+                  <span class="service-currency">NPR</span>
+                  <span class="service-price" data-target="1500">0</span>
+                </div>
+              </div>
+              <div class="service-row">
+                <div class="service-info">
+                  <h4 class="service-name">Cleanup</h4>
+                  <p class="service-desc">Gentle pore extraction, gentle tone refresh, and botanical moisturizing mask.</p>
+                </div>
+                <div class="service-price-wrap">
+                  <span class="service-currency">NPR</span>
+                  <span class="service-price" data-target="1000">0</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Beauty Category -->
+          <div class="service-category reveal-fade-up">
+            <div class="category-label-col">
+              <span class="eyebrow">03</span>
+              <h3 class="category-title">Beauty</h3>
+            </div>
+            <div class="services-list">
+              <div class="service-row">
+                <div class="service-info">
+                  <h4 class="service-name">Threading</h4>
+                  <p class="service-desc">Clean, delicate brow shaping and upper-lip contouring using organic thread.</p>
+                </div>
+                <div class="service-price-wrap">
+                  <span class="service-currency">NPR</span>
+                  <span class="service-price" data-target="100">0</span>
+                </div>
+              </div>
+              <div class="service-row">
+                <div class="service-info">
+                  <h4 class="service-name">Manicure</h4>
+                  <p class="service-desc">Nail shaping, cuticle restoration, hand soak, and clean buffer polish.</p>
+                </div>
+                <div class="service-price-wrap">
+                  <span class="service-currency">NPR</span>
+                  <span class="service-price" data-target="800">0</span>
+                </div>
+              </div>
+              <div class="service-row">
+                <div class="service-info">
+                  <h4 class="service-name">Pedicure</h4>
+                  <p class="service-desc">Warm mineral foot bath, gentle scrub, sole smoothing, and foot massage.</p>
+                </div>
+                <div class="service-price-wrap">
+                  <span class="service-currency">NPR</span>
+                  <span class="service-price" data-target="1000">0</span>
+                </div>
+              </div>
+              <div class="service-row">
+                <div class="service-info">
+                  <h4 class="service-name">Bridal makeup</h4>
+                  <p class="service-desc">Flawless, photo-tested traditional or modern bridal artistry with dupatta styling.</p>
+                </div>
+                <div class="service-price-wrap">
+                  <span class="service-currency">NPR</span>
+                  <span class="service-price" data-target="8000">0</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- PHOTO GALLERY SECTION -->
+    <section class="section section--surface gallery-section" id="gallery">
+      <div class="container">
+        <div class="section-header reveal-fade-up">
+          <span class="eyebrow">Inside The Parlour</span>
+          <h2 class="heading-section">The Space &amp; Craft</h2>
+          <p class="lead-text">Calm corners, natural light, and quiet details designed for your comfort.</p>
+        </div>
+
+        <div class="gallery-grid">
+          <!-- Slot 1 -->
+          <div class="gallery-slot reveal-fade-up">
+            <img class="gallery-img" src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='800' height='1000' viewBox='0 0 800 1000'%3E%3Crect width='100%25' height='100%25' fill='%23D7D1C6'/%3E%3Ctext x='50%25' y='50%25' fill='%23706F6A' font-family='sans-serif' font-size='20' text-anchor='middle'%3EStyling Station Light%3C/text%3E%3C/svg%3E" alt="Clean warm salon styling station with mirror reflection and shears" loading="lazy">
+            <div class="gallery-slot-caption">Styling Chair &amp; Daylight</div>
+          </div>
+
+          <!-- Slot 2 -->
+          <div class="gallery-slot reveal-fade-up">
+            <img class="gallery-img" src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='800' height='800' viewBox='0 0 800 800'%3E%3Crect width='100%25' height='100%25' fill='%23DDD7CD'/%3E%3Ctext x='50%25' y='50%25' fill='%23706F6A' font-family='sans-serif' font-size='20' text-anchor='middle'%3EPrecision Scissor Work%3C/text%3E%3C/svg%3E" alt="Close-up of stylist cutting hair with shears and comb" loading="lazy">
+            <div class="gallery-slot-caption">Handcraft &amp; Focus</div>
+          </div>
+
+          <!-- Slot 3 -->
+          <div class="gallery-slot reveal-fade-up">
+            <img class="gallery-img" src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='600' height='800' viewBox='0 0 600 800'%3E%3Crect width='100%25' height='100%25' fill='%23CDC7BD'/%3E%3Ctext x='50%25' y='50%25' fill='%23706F6A' font-family='sans-serif' font-size='20' text-anchor='middle'%3EBespoke Hair Wash Basin%3C/text%3E%3C/svg%3E" alt="Comfortable ceramic hair washing station with organic products" loading="lazy">
+            <div class="gallery-slot-caption">Restorative Scalp Wash</div>
+          </div>
+
+          <!-- Slot 4 -->
+          <div class="gallery-slot reveal-fade-up">
+            <img class="gallery-img" src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='600' height='800' viewBox='0 0 600 800'%3E%3Crect width='100%25' height='100%25' fill='%23D4CEC4'/%3E%3Ctext x='50%25' y='50%25' fill='%23706F6A' font-family='sans-serif' font-size='20' text-anchor='middle'%3ESanitized Shears & Combs%3C/text%3E%3C/svg%3E" alt="Carefully arranged steel scissors and wooden combs on oak tray" loading="lazy">
+            <div class="gallery-slot-caption">Sanitized Tool Tray</div>
+          </div>
+
+          <!-- Slot 5 -->
+          <div class="gallery-slot reveal-fade-up">
+            <img class="gallery-img" src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='1000' height='680' viewBox='0 0 1000 680'%3E%3Crect width='100%25' height='100%25' fill='%23DDD7CC'/%3E%3Ctext x='50%25' y='50%25' fill='%23706F6A' font-family='sans-serif' font-size='20' text-anchor='middle'%3EMinimalist Waiting Corner%3C/text%3E%3C/svg%3E" alt="Warm off-white seating area with herbal tea service and botanical greenery" loading="lazy">
+            <div class="gallery-slot-caption">The Waiting Corner</div>
+          </div>
+
+          <!-- Slot 6 -->
+          <div class="gallery-slot reveal-fade-up">
+            <img class="gallery-img" src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='800' height='1000' viewBox='0 0 800 1000'%3E%3Crect width='100%25' height='100%25' fill='%23CCC6BC'/%3E%3Ctext x='50%25' y='50%25' fill='%23706F6A' font-family='sans-serif' font-size='20' text-anchor='middle'%3ENatural Bridal Detail%3C/text%3E%3C/svg%3E" alt="Finished gentle bridal hair updo with subtle fresh floral pins" loading="lazy">
+            <div class="gallery-slot-caption">Bridal Styling Detail</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FAQ ACCORDION SECTION -->
+    <section class="section" id="faq">
+      <div class="container">
+        <div class="section-header text-center reveal-fade-up">
+          <span class="eyebrow">Common Questions</span>
+          <h2 class="heading-section">Frequently Asked</h2>
+          <p class="lead-text">Everything you need to know about preparing for your visit to Valish.</p>
+        </div>
+
+        <div class="faq-wrap reveal-fade-up">
+          <!-- Question 1 -->
+          <div class="faq-item">
+            <button class="faq-trigger" aria-expanded="false" aria-controls="faq-ans-1">
+              <span>Do I need an appointment?</span>
+              <span class="faq-icon" aria-hidden="true"></span>
+            </button>
+            <div class="faq-panel" id="faq-ans-1">
+              <div class="faq-panel-content">
+                <div class="faq-panel-inner">
+                  Appointments are recommended to ensure dedicated, uninterrupted time with your stylist. However, we always welcome walk-ins whenever a chair is free.
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Question 2 -->
+          <div class="faq-item">
+            <button class="faq-trigger" aria-expanded="false" aria-controls="faq-ans-2">
+              <span>How long does a haircut take?</span>
+              <span class="faq-icon" aria-hidden="true"></span>
+            </button>
+            <div class="faq-panel" id="faq-ans-2">
+              <div class="faq-panel-content">
+                <div class="faq-panel-inner">
+                  A typical haircut and styling session takes 35 to 50 minutes. We allow extra time for initial consultations and finishing so you never feel rushed.
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Question 3 -->
+          <div class="faq-item">
+            <button class="faq-trigger" aria-expanded="false" aria-controls="faq-ans-3">
+              <span>Do you offer bridal packages?</span>
+              <span class="faq-icon" aria-hidden="true"></span>
+            </button>
+            <div class="faq-panel" id="faq-ans-3">
+              <div class="faq-panel-content">
+                <div class="faq-panel-inner">
+                  Yes. We offer complete bridal setups including skin prep, traditional hair artistry, saree/dupatta draping, and pre-wedding facials. Please contact us a few weeks in advance for consultations.
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Question 4 -->
+          <div class="faq-item">
+            <button class="faq-trigger" aria-expanded="false" aria-controls="faq-ans-4">
+              <span>What payment methods do you accept?</span>
+              <span class="faq-icon" aria-hidden="true"></span>
+            </button>
+            <div class="faq-panel" id="faq-ans-4">
+              <div class="faq-panel-content">
+                <div class="faq-panel-inner">
+                  We accept cash, all major Nepalese bank QR payments (Fonepay), eSewa, Khalti, and standard debit/credit cards.
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Question 5 -->
+          <div class="faq-item">
+            <button class="faq-trigger" aria-expanded="false" aria-controls="faq-ans-5">
+              <span>Do you use branded products?</span>
+              <span class="faq-icon" aria-hidden="true"></span>
+            </button>
+            <div class="faq-panel" id="faq-ans-5">
+              <div class="faq-panel-content">
+                <div class="faq-panel-inner">
+                  Exclusively. We work with verified professional lines (L'Oréal Professional, Matrix, Schwarzkopf, and dermatologically tested botanical skincare) to protect hair and skin health.
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Question 6 -->
+          <div class="faq-item">
+            <button class="faq-trigger" aria-expanded="false" aria-controls="faq-ans-6">
+              <span>What are your opening hours?</span>
+              <span class="faq-icon" aria-hidden="true"></span>
+            </button>
+            <div class="faq-panel" id="faq-ans-6">
+              <div class="faq-panel-content">
+                <div class="faq-panel-inner">
+                  We are open Sunday through Friday from 9:00 AM to 7:30 PM, and Saturdays from 8:30 AM to 8:00 PM.
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- BOOKING FORM SECTION -->
+    <section class="section section--surface" id="book">
+      <div class="container">
+        <div class="booking-grid">
+          
+          <!-- Left Column: Details -->
+          <div class="booking-info-col reveal-fade-up">
+            <span class="eyebrow">Reservations</span>
+            <h2 class="heading-section">Book your visit</h2>
+            <p class="lead-text">Fill out your preferred service and schedule. We will review availability and confirm your spot promptly.</p>
+
+            <div class="booking-contact-list">
+              <div class="booking-contact-item">
+                <svg class="contact-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                  <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+                  <circle cx="12" cy="10" r="3"></circle>
+                </svg>
+                <div>
+                  <span class="contact-text-label">Location</span>
+                  <span class="contact-text-value">Your city, Nepal</span>
+                </div>
+              </div>
+
+              <div class="booking-contact-item">
+                <svg class="contact-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                  <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path>
+                </svg>
+                <div>
+                  <span class="contact-text-label">Phone &amp; WhatsApp</span>
+                  <span class="contact-text-value">+977-98XXXXXXXX</span>
+                </div>
+              </div>
+
+              <div class="booking-contact-item">
+                <svg class="contact-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                  <circle cx="12" cy="12" r="10"></circle>
+                  <polyline points="12 6 12 12 16 14"></polyline>
+                </svg>
+                <div>
+                  <span class="contact-text-label">Hours</span>
+                  <span class="contact-text-value">Sun – Fri: 9am – 7:30pm | Sat: 8:30am – 8pm</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Right Column: Form Card -->
+          <div class="booking-card reveal-fade-up">
+            <!-- DEMO ONLY: connect a form backend here later -->
+            <form id="bookingForm" novalidate>
+              
+              <div class="form-group-row">
+                <div class="form-field" id="field-name">
+                  <label for="clientName" class="form-label">Full Name</label>
+                  <input type="text" id="clientName" name="name" class="form-input" placeholder="e.g. Aarav Sharma" autocomplete="name" required>
+                  <span class="form-error-msg" id="nameError">Please enter your full name.</span>
+                </div>
+
+                <div class="form-field" id="field-phone">
+                  <label for="clientPhone" class="form-label">Phone Number</label>
+                  <input type="tel" id="clientPhone" name="phone" class="form-input" placeholder="e.g. 9801234567" autocomplete="tel" required>
+                  <span class="form-error-msg" id="phoneError">Please enter a valid 9 to 10 digit number.</span>
+                </div>
+              </div>
+
+              <div class="form-group-row">
+                <div class="form-field" id="field-email">
+                  <label for="clientEmail" class="form-label">Email Address <span class="optional-tag">(Optional)</span></label>
+                  <input type="email" id="clientEmail" name="email" class="form-input" placeholder="name@domain.com" autocomplete="email">
+                </div>
+
+                <div class="form-field" id="field-service">
+                  <label for="clientService" class="form-label">Desired Service</label>
+                  <div class="form-select-wrap">
+                    <select id="clientService" name="service" class="form-select" required>
+                      <option value="" disabled selected>Select a treatment...</option>
+                      <optgroup label="Hair">
+                        <option value="Haircut (NPR 500)">Haircut (NPR 500)</option>
+                        <option value="Hair coloring (NPR 2500)">Hair coloring (NPR 2500)</option>
+                        <option value="Hair spa (NPR 1500)">Hair spa (NPR 1500)</option>
+                        <option value="Straightening (NPR 4000)">Straightening (NPR 4000)</option>
+                      </optgroup>
+                      <optgroup label="Skin">
+                        <option value="Facial (NPR 1500)">Facial (NPR 1500)</option>
+                        <option value="Cleanup (NPR 1000)">Cleanup (NPR 1000)</option>
+                      </optgroup>
+                      <optgroup label="Beauty">
+                        <option value="Threading (NPR 100)">Threading (NPR 100)</option>
+                        <option value="Manicure (NPR 800)">Manicure (NPR 800)</option>
+                        <option value="Pedicure (NPR 1000)">Pedicure (NPR 1000)</option>
+                        <option value="Bridal makeup (NPR 8000)">Bridal makeup (NPR 8000)</option>
+                      </optgroup>
+                    </select>
+                  </div>
+                  <span class="form-error-msg" id="serviceError">Please choose a service.</span>
+                </div>
+              </div>
+
+              <div class="form-group-row">
+                <div class="form-field" id="field-date">
+                  <label for="clientDate" class="form-label">Preferred Date</label>
+                  <input type="date" id="clientDate" name="date" class="form-input" required>
+                  <span class="form-error-msg" id="dateError">Please pick today or a future date.</span>
+                </div>
+
+                <div class="form-field" id="field-time">
+                  <label for="clientTime" class="form-label">Preferred Time</label>
+                  <div class="form-select-wrap">
+                    <select id="clientTime" name="time" class="form-select" required>
+                      <option value="" disabled selected>Select time window...</option>
+                      <option value="Morning (9:00 AM - 12:00 PM)">Morning (9:00 AM - 12:00 PM)</option>
+                      <option value="Afternoon (12:00 PM - 3:00 PM)">Afternoon (12:00 PM - 3:00 PM)</option>
+                      <option value="Late Afternoon (3:00 PM - 5:30 PM)">Late Afternoon (3:00 PM - 5:30 PM)</option>
+                      <option value="Evening (5:30 PM - 7:30 PM)">Evening (5:30 PM - 7:30 PM)</option>
+                    </select>
+                  </div>
+                  <span class="form-error-msg" id="timeError">Please pick a preferred time.</span>
+                </div>
+              </div>
+
+              <div class="form-field">
+                <label for="clientNotes" class="form-label">Notes or Special Requests <span class="optional-tag">(Optional)</span></label>
+                <textarea id="clientNotes" name="notes" class="form-textarea" placeholder="Specific hair length, allergies, or questions..."></textarea>
+              </div>
+
+              <button type="submit" class="btn btn-primary btn-block" id="bookingSubmitBtn">Request appointment</button>
+            </form>
+
+            <!-- Friendly Confirmation View -->
+            <div class="booking-confirmation-card" id="bookingConfirmationCard" aria-live="polite">
+              <div class="confirm-icon-wrap" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                  <polyline points="20 6 9 17 4 12"></polyline>
+                </svg>
+              </div>
+              <h3 class="confirm-title">Request Received</h3>
+              <p class="confirm-message">Thank you, <span id="confirmName">Friend</span>. We will confirm your booking shortly via phone or message.</p>
+              
+              <div class="confirm-summary">
+                <div class="confirm-summary-row">
+                  <span class="confirm-summary-label">Service:</span>
+                  <span class="confirm-summary-value" id="confirmService">—</span>
+                </div>
+                <div class="confirm-summary-row">
+                  <span class="confirm-summary-label">Date:</span>
+                  <span class="confirm-summary-value" id="confirmDate">—</span>
+                </div>
+                <div class="confirm-summary-row">
+                  <span class="confirm-summary-label">Time:</span>
+                  <span class="confirm-summary-value" id="confirmTime">—</span>
+                </div>
+              </div>
+
+              <button type="button" class="btn btn-outline" id="resetBookingBtn">Make another request</button>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ENDING STATEMENT SECTION -->
+    <section class="ending-section" aria-label="Closing Invitation">
+      <div class="container reveal-fade-up">
+        <span class="eyebrow">Welcome to Valish</span>
+        <h2 class="ending-statement">Come in. Leave feeling like yourself.</h2>
+        <a href="#book" class="btn btn-primary">Book an Appointment</a>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        
+        <div class="footer-brand">
+          <div class="logo-group">
+            <span class="logo-title">VALISH</span>
+            <span class="logo-subtitle">Beauty Salon &amp; Parlour</span>
+          </div>
+          <p class="footer-bio">A dedicated neighborhood salon committed to honest grooming, soothing spaces, and personalized hair and skincare in Nepal.</p>
+        </div>
+
+        <div>
+          <h4 class="footer-col-title">Hours</h4>
+          <table class="footer-hours-table" aria-label="Salon Opening Hours">
+            <tbody>
+              <tr>
+                <td>Sun – Fri</td>
+                <td>9:00 AM – 7:30 PM</td>
+              </tr>
+              <tr>
+                <td>Saturday</td>
+                <td>8:30 AM – 8:00 PM</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+        <div>
+          <h4 class="footer-col-title">Connect</h4>
+          <div class="footer-list">
+            <p>Your city, Nepal</p>
+            <p><a href="tel:+9779800000000">+977-98XXXXXXXX</a></p>
+            <div class="footer-social-links">
+              <a href="#" class="footer-social-link" aria-label="Instagram">Instagram</a>
+              <a href="#" class="footer-social-link" aria-label="Facebook">Facebook</a>
+              <a href="#" class="footer-social-link" aria-label="TikTok">TikTok</a>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+      <div class="footer-bottom">
+        <p>&copy; 2026 VALISH Beauty Salon and Parlour. All rights reserved.</p>
+        <p>Crafted with care in Nepal.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- FLOATING WHATSAPP BUTTON (MOBILE & DESKTOP QUICK-LINK) -->
+  <a href="https://wa.me/9779800000000" class="whatsapp-float" aria-label="Chat with Valish Salon on WhatsApp" target="_blank" rel="noopener noreferrer">
+    <svg viewBox="0 0 24 24" aria-hidden="true">
+      <path d="M12.04 2c-5.46 0-9.91 4.45-9.91 9.91 0 1.75.46 3.45 1.32 4.95L2.05 22l5.25-1.38c1.45.79 3.08 1.21 4.74 1.21 5.46 0 9.91-4.45 9.91-9.91 0-2.65-1.03-5.14-2.9-7.01A9.82 9.82 0 0 0 12.04 2zm.01 1.67c2.2 0 4.26.86 5.82 2.41a8.18 8.18 0 0 1 2.41 5.83c0 4.54-3.7 8.24-8.24 8.24-1.48 0-2.93-.4-4.2-1.15l-.3-.18-3.12.82.83-3.04-.2-.31a8.19 8.19 0 0 1-1.26-4.38c0-4.54 3.7-8.24 8.24-8.24zm4.52 11.66c-.25-.13-1.47-.72-1.7-.81-.23-.08-.39-.13-.56.13-.17.25-.64.81-.79.97-.14.17-.29.19-.54.06-.25-.13-1.06-.39-2.02-1.25-.75-.67-1.25-1.5-1.4-1.75-.15-.25-.02-.39.11-.51.11-.11.25-.29.38-.44.13-.14.17-.25.25-.42.08-.17.04-.31-.02-.44-.06-.13-.56-1.35-.77-1.85-.2-.49-.41-.42-.56-.43h-.48c-.17 0-.44.06-.67.31-.23.25-.88.86-.88 2.1 0 1.24.9 2.44 1.03 2.61.13.17 1.78 2.72 4.31 3.81.6.26 1.07.42 1.44.54.61.19 1.16.17 1.6.1 0 .49-.07 1.5-.72 1.71-.85.22-.14.22-.27.22-.51.1-.25-.03-.38-.15-.5z"/>
+    </svg>
+  </a>
+
+  <!-- GSAP & ScrollTrigger from cdnjs CDN -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+
+  <!-- Application Script -->
+  <script src="script.js"></script>
+</body>
+</html>
